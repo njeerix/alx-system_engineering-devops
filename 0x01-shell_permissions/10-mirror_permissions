@@ -1,2 +1,2 @@
-#!/bin/bash/env
+#!/bin/bash
 chmod 664 olleh
