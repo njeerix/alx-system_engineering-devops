@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#This script displays "To infinity and beyond" indefinitely
+./7-highlander & $! > 7-highlander_pid.txt
+#The second part of the script stops the 7-highlander process without using kill.
+read -rp "Press Enter to stop the process..."
+pid=$(cat 7-highlander_pid.txt)
+kill -15 "$pid"

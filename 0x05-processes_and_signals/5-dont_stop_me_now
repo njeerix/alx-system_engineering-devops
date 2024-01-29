@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#This script starts an infinite loop and saves its PID to a file
+./4-to_infinity_and_beyond & echo $! > 4-to_infinity_and_beyond_pid.txt
+
+read -rp "Press Enter to stop the process..."
+
+#Read the saved PID from the file
+pid=$(cat 4-to_infinity_and_beyond_pid.txt)
+
+kill "$pid"
