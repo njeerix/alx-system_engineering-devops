@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#This script displays lines containing the word "bash" to get the PID of the Bash process
+
+bash_pid=$(pgrep -o bash)
+echo "$bash_pid"

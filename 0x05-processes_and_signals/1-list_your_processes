@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#This script displays a list of currently running processes with hierachy
+ps aux --forest | head -n +2
+echo

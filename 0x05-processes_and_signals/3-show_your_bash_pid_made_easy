@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#find the processes and extract PID and command
+for pid in $(pgrep -f bash); do
+    process_name=$(ps -p "$pid" -o comm=)
+    echo "$pid $process_name"
+done
