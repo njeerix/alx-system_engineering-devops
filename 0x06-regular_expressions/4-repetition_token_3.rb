@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+#Get the argument from the command line
+input = ARGV[0]
+
+#Define the regular expression match "hbtn" followed by one or more
+regex = /hbt+t*n/
+
+#Use the regular expression matching method
+match_result ? match_result[0]: " "
+
+#Print the match result or an empty string if no match
+puts match_result ? match_result[0]: " "
