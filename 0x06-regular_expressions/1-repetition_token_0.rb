@@ -4,7 +4,7 @@
 input = ARGV[0]
 
 #Define the regular expression to match "hbtn" followed by 0 or more 't' characters
-regex = /hbt+n/
+regex = /hbt{2,}n|hbttn/
 
 #Use the regular expression matching method
 match_result = input.match(regex)
