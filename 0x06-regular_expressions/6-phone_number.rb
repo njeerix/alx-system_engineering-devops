@@ -10,4 +10,4 @@ regex = /^[0-9]{10}$/
 match_result = input.match(regex)
 
 #Print the match result or an empty string if no match
-puts match_result ? match_result[0]: " "
+puts match_result ? "#{match_result[0]}$" : ""
