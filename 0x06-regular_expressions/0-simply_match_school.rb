@@ -7,7 +7,10 @@ input = ARGV[0]
 regex = /School/
 
 #Use the regular expression matching method
-match_result = input.match(regex)
+matches = input.scan(regex)
 
-#Print the match resukt or an empty string if no match
-puts match_result ? match_result[0] : " "
+#join the matches into a single string
+result = matches.join
+
+#Print the result or an empty string if no matches
+puts result.empty? ? "" : result
