@@ -5,6 +5,7 @@ global
     stats socket /run/haproxy/admin.sock mode 660 level admin
     stats timeout 30s
     user haproxy
+    group haproxy
     daemon
 
 defaults
@@ -22,4 +23,5 @@ frontend www-https
     default_backend backend-www
 
 backend backend-www
-server web-server1 54.87.241.12:80 check
+    balance roundrobin
+    server web-server1 54.87.241.12:80 check
