@@ -5,11 +5,11 @@ print_info () {
     local domain="$2"
     dig_output=$(dig +short "$subdomain.$domain")
     if [[ -n "$dig_output" ]]; then
-	    record_type="A"
-	    destination="$dig_output"
-	    echo "The subdomain $subdomain is a $record_type record and points to $destination"
+	record_type="A"
+	destination="$dig_output"
+	echo "The subdomain $subdomain is a $record_type record and points to $destination"
     else
-	    echo "No information found for subdomain $subdomain"
+	echo "No information found for subdomain $subdomain"
     fi
 }
 
