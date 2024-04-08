@@ -5,8 +5,8 @@ print_info () {
     local domain="$2"
     dig_output=$(dig "$subdomain.$domain" +short)
     if [[ -n "$dig_output" ]]; then
-	    record_type=$(dig "$subdomain.$domain" | awk '/ANSWER SECTION/ {print $4}')
-	    destination=$(echo "$dig_output" | tr '\n' ' ')
+	    record_type="A"
+	    destination="$dig_output"
 	    echo "The subdomain $subdomain is a $record_type record and points to $destination"
     else
 	    echo "No information found for subdomain $subdomain"
