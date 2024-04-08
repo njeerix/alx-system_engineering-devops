@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# This script stops, modifies, and restarts Nginx to listen on port 80
+
 # Stop Nginx service
 service nginx stop
 
