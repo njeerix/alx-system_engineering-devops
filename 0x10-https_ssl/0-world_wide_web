@@ -3,7 +3,7 @@
 print_info () {
     local subdomain="$1"
     local domain="$2"
-    dig_output=$(dig "$subdomain.$domain" +short)
+    dig_output=$(dig +short "$subdomain.$domain")
     if [[ -n "$dig_output" ]]; then
 	    record_type="A"
 	    destination="$dig_output"
