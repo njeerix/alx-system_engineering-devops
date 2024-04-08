@@ -1,3 +1,6 @@
-./0-nginx_likes_port_80: line 4: service: command not found
-sed: can't read /etc/nginx/sites-available/default: No such file or directory
-./0-nginx_likes_port_80: line 10: service: command not found
+ * Stopping nginx nginx
+   ...done.
+ * Starting nginx nginx
+   ...done.
+Nginx is running and listening on port 80.
+Nginx returned HTTP 200 OK on port 80.
