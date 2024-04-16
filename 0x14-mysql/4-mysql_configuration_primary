@@ -1,0 +1,21 @@
+# MySQL Server configuration file for web-01 (Primary)
+
+[mysqld]
+pid-file = /var/run/mysqld/mysqld.pid
+socket = /var/run/mysqld/mysqld.sock
+datadir = /var/lib/mysql
+log-error = /var/log/mysql/error.log
+
+# Comment out bind-address to enable MySQL replication
+# bind-address = 127.0.0.1
+
+# Disabling symbolic-links is recommended to prevent security risks
+symbolic-links = 0
+
+# Setting server id (must be unique)
+server-id = 1
+
+# Setting thebasename & location of MySQL binary log file log_bin = /var/log/mysql/mysql-bin.log
+
+# Name of database to replicat
+binlog_do_db = tyrell_corp
