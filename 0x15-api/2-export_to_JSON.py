@@ -1,11 +1,24 @@
 #!/usr/bin/python3
-"""Returns to-do list information for a given employee ID."""
+"""Returns to-do list information for a given employee ID to JSON format."""
+
 import sys
 import json
 import requests
 
 
 def export_employee_todo_list_to_json(user_id):
+    """Exports to-do list information for the specified user ID to a JSON file.
+
+    Args:
+        user_id (int or str): The ID of the user whose to-do will be exported.
+
+    Raises:
+        requests.exceptions.RequestException: If there is an issue with
+        ValueError: If the user ID is not valid (non-integer).
+
+    Returns:
+        None
+    """
     url = "https://jsonplaceholder.typicode.com/"
 
     try:
