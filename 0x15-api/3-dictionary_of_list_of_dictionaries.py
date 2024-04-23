@@ -45,7 +45,7 @@ def export_todo_all_employees_to_json():
             user_tasks[user_id] = user_task_list
 
         # Write user tasks list to dictionsry
-        with open ("todo_all_employees.json", "w") as jsonfile:
+        with open("todo_all_employees.json", "w") as jsonfile:
             json.dump(user_tasks, jsonfile, separators=(',', ':'))
 
         print("Export successful: todo_all_employees.json created.")
