@@ -6,6 +6,7 @@ Exports to-do list information of all employees to JSON format.
 import json
 import requests
 
+
 def export_todo_all_employees_to_json():
     base_url = "https://jsonplaceholder.typicode.com"
 
@@ -24,12 +25,21 @@ def export_todo_all_employees_to_json():
             username = user["username"]
 
             # Fetch tasks for current user
-            tasks_response = requests.get(f"{base_url}/todos", params={"userId": user_id})
+            tasks_response = requests.get(
+                f"{base_url}/todos",
+                params={"userId": user_id}
+            )
             tasks_response.raise_for_status()
             tasks = tasks_response.json()
 
             # Prepare task list for current user
-            user_task_list = [{"task": task["title"], "completed": task["completed"], "username": username} for task in tasks]
+            user_task_list = [
+                {
+                    "task": task["title"],
+                    "completed": task["completed"],
+                    "username": username
+                } for task in tasks
+            ]
 
             # Add user task list to dictionary
             user_tasks[user_id] = user_task_list
