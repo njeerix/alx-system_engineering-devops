@@ -25,7 +25,8 @@ def fetch_employee_todo_progress(employee_id):
         total_tasks = len(todos_data)
         completed_tasks = sum(1 for todo in todos_data if todo['completed'])
         # Print progress information
-        print(employee_name + f" completed {completed_tasks}/{total_tasks} tasks:")
+        print(f"{employee_name} completed "
+              f"{completed_tasks}/{total_tasks} tasks:")
         for todo in todos_data:
             if todo['completed']:
                 print(f"    {todo['title']}")
