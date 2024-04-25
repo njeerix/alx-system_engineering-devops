@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
-# Connect to server 34.227.93.29 using ssh with private key in ~/.ssh/school
+# Connect to server using ssh with private key in ~/.ssh/school
 
-ssh -i /vagrant/private_key ubuntu@54.87.241.12
+server_ip="3.83.238.199"
+private_key="~/.ssh/school"
+ssh_user="ubuntu"
+
+chmod 600 "$private_key"
+
+ssh -i "$private_key" "$ssh_user"@"$server_ip"

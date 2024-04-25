@@ -1,6 +1,10 @@
-Host example_server
-    Hostname 34.227.93.29
-    User ubuntu
-    IdentityFile ~/.ssh/school
-    PreferredAuthentications publickey
+#!/usr/bin/env bash
+# SSH client configuration
+
+Host *
     PasswordAuthentication no
+    IdentityFile ~/.ssh/school
+    SendEnv LANG LC_*
+    HashKnownHosts yes
+    GSSAPIAuthentication yes
+    GSSAPIDelegateCredentials no
