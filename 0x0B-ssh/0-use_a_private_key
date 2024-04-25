@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Connect to server 34.227.93.29 using ssh with private key in ~/.ssh/school
+# Connect to server using ssh with private key in ~/.ssh/school
 
-ssh -i /vagrant/private_key ubuntu@54.87.241.12
+ssh -i ~/.ssh/school ubuntu@3.83.245.217
