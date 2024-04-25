@@ -1,10 +1,4 @@
 #!/usr/bin/env bash
 # Connect to server using ssh with private key in ~/.ssh/school
 
-server_ip="3.83.238.199"
-private_key="~/.ssh/school"
-ssh_user="ubuntu"
-
-chmod 600 "$private_key"
-
-ssh -i "$private_key" "$ssh_user"@"$server_ip"
+ssh -i ~/.ssh/school ubuntu@3.83.238.199
