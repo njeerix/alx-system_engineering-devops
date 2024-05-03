@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-#This script listens on port 98 on localhost
-
-#Set up a simple TCP server using netcat
-nc -l -p 98 &
-wait $!
