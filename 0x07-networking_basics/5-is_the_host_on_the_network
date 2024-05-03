@@ -1,9 +1,0 @@
-#!/bin/bash
-
-#Check if an argument is passed
-if [ $# -eq ]; then
-    echo "Usage: $0 {IP_ADDRESS}"
-    exit 1
-fi
-# Ping the IP 5 times
-ping -c 5 $1
