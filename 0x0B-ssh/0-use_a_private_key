@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-# Connect to server using ssh with private key in ~/.ssh/school
-
-<<<<<<< HEAD
-ssh -i ~/.ssh/school ubuntu@3.83.245.217
-=======
-ssh -i ~/.ssh/school ubuntu@3.83.238.199
->>>>>>> origin/master
