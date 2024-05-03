@@ -1,6 +1,0 @@
- * Stopping nginx nginx
-   ...done.
- * Starting nginx nginx
-   ...done.
-Nginx is running and listening on port 80.
-Nginx returned HTTP 200 OK on port 80.

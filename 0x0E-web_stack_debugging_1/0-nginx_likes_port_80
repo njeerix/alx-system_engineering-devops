@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-# This script stops, modifies, and restarts Nginx to listen on port 80
-cd /etc/nginx/sites-enabled/ || exit;
-rm default;
-ln -s /etc/nginx/sites-available/default default;
-service nginx restart
