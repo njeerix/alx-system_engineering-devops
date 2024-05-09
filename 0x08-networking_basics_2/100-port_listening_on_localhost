@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Bash cript that listens on port 98 on localhost
+
+echo "Listening on port 98. Waiting for connection..."
+
+nc -l 98
